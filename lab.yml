@@ -1,0 +1,20 @@
+name: lab
+root: ~
+
+windows:
+  - local:
+      layout: main-vertical
+      panes:
+        - echo "local shell"
+        - htop
+  - proxmox:
+      panes:
+        - ssh proxmox
+  - pi:
+      panes:
+        - ssh pi
+  - logs:
+      layout: even-horizontal
+      panes:
+        - echo "ready for log tailing"
+        - echo "ready for packet captures"

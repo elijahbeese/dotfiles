@@ -124,3 +124,14 @@ alias lt='eza --tree --icons'
 alias lab='ssh proxmox'
 alias pi='ssh pi'
 alias proliant='ssh proliant'
+
+# fzf integration
+[ -f /usr/share/fzf/shell/key-bindings.zsh ] && source /usr/share/fzf/shell/key-bindings.zsh
+[ -f /usr/share/fzf/shell/completion.zsh ] && source /usr/share/fzf/shell/completion.zsh
+
+# Fuzzy search history with Ctrl+R
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+neofetch
+
+# GNOME Keyring SSH
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
