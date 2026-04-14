@@ -1,0 +1,24 @@
+Host proxmox
+  HostName 100.90.195.73
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+
+Host proliant
+  HostName 100.119.210.126
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+
+Host pi
+  HostName 100.119.34.79
+  User elijah
+  IdentityFile ~/.ssh/id_ed25519
+
+Host kali
+  HostName 100.77.251.92
+  User kali
+  IdentityFile ~/.ssh/id_ed25519
+
+Host splunk
+  HostName 100.81.37.2
+  User elijah
+  IdentityFile ~/.ssh/id_ed25519
